@@ -8,12 +8,14 @@
   	
   	<script>
  		 <!-- (new Formio('https://mgnnotdderlfrsk.form.io/add')).loadForm().then(function(form){ -->
-  		/*(new Formio('https://eleojoksajzgmiv.form.io/calc')).loadForm().then(function(form){
+  		(new Formio('https://eleojoksajzgmiv.form.io/calc')).loadForm().then(function(form){
 			Formio.createForm(document.getElementById('formio'), form).then(function(instance){
 				instance.on('submit', function(submission){
 					//var url = 'https://testapimgmtalfsasa1.azure-api.net/calc/add?a=';
 					//var url = 'https://lfazuretestapi.portal.azure-api.net/calc/add?a='; wrong URL
-					var url = 'https://lfazuretestapi.azure-api.net/add?a=';
+					
+					//var url = 'https://lfazuretestapi.azure-api.net/add?a='; First working API LT
+					var url = 'https://lfazuretestapi.azure-api.net/LfSubstring/subStringRight';
 					url += submission.data.input1;
 					url += '&b=';
 					url += submission.data.input2;
@@ -31,24 +33,8 @@
 					});
 				});
 			});
-		});*/
-		
-		var url = 'https://lfazuretestapi.azure-api.net/add?a=';
-		url += submission.data.input1;
-		url += '&b=';
-		url += submission.data.input2;
-		alert('url = '+url);
-		$.ajax({
-			url: url,
-			beforeSend: function(xhrObj){
-				//Request headers
-			},
-			type: "GET"
-		}).done(function(data){
-			console.log(data)
-		}).fail(function(err){
-			console.log(err)
 		});
+
  	 </script>
  	 <script type='text/javascript'>
    		 window.onload = function () {
