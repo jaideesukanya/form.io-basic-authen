@@ -12,7 +12,7 @@
 			Formio.createForm(document.getElementById('formio'), form).then(function(instance){
 				instance.on('submit', function(submission){
 					//var url = 'https://testapimgmtalfsasa1.azure-api.net/calc/add?a=';
-					//var url = 'https://lfazuretestapi.portal.azure-api.net/calc/add?a=';
+					//var url = 'https://lfazuretestapi.portal.azure-api.net/calc/add?a='; wrong URL
 					var url = 'https://lfazuretestapi.azure-api.net/add?a=';
 					url += submission.data.input1;
 					url += '&b=';
@@ -35,6 +35,7 @@
  	 </script>
  	 <script type='text/javascript'>
    		 window.onload = function () {
+   			alert('window onload');
       		Formio.createForm(document.getElementById('formio'), formdata);
     	};
   	</script>
