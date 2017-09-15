@@ -28,7 +28,8 @@
 						},
 						type: "GET"
 					}).done(function(data){
-						console.log(data)
+						console.log(data);
+						form.submission.data.result = 'test';
 					}).fail(function(err){
 						console.log(err)
 					});
@@ -39,7 +40,7 @@
  	 </script>
  	 <script type='text/javascript'>
    		 window.onload = function () {
-   			alert('window onload');
+   			alert('window onload2');
       		//Formio.createForm(document.getElementById('formio'), formdata);
     	};
   	</script>
