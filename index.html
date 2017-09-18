@@ -5,37 +5,8 @@
   	<script src='https://unpkg.com/formiojs@latest/dist/formio.full.min.js'></script>
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script type="text/javascript" language="javascript" src="index.json"></script>
-  	
-  	<script>
-  		(new Formio('https://eleojoksajzgmiv.form.io/calc')).loadForm().then(function(form){
-			Formio.createForm(document.getElementById('formio'), form).then(function(instance){
-				instance.on('submit', function(submission){
-					var url = 'https://lfazuretestapi.azure-api.net/LfSubstring/subStringRight';
-					url += '?a=';
-					url += submission.data.input1;
-					url += '&b=';
-					url += submission.data.input2;
-					alert('url = '+url);
-					$.ajax({
-						url: url,
-						beforeSend: function(xhrObj){
-							//Request headers
-						},
-						type: "GET"
-					}).done(function(data){
-						console.log(data);
-						form.submission.data.result = 'test';
-					}).fail(function(err){
-						console.log(err)
-					});
-				});
-			});
-		});
-
- 	 </script>
  	 <script type='text/javascript'>
    		 window.onload = function () {
-   		
       		Formio.createForm(document.getElementById('formio'), formdata);
     	};
   	</script>
