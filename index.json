@@ -1,14 +1,14 @@
 var formdata= 
 {
-  "_id": "59b1653b7b152500078711f9",
-  "modified": "2017-10-05T02:56:22.318Z",
-  "title": "User Login",
-  "name": "userLogin",
-  "path": "user/login",
-  "machineName": "rumfdddvtptbkrb:userLogin",
-  "project": "59b1653a7b152500078711f3",
+  "_id": "59d5af879f6c420008a283dd",
+  "machineName": "plwhhzhptjgiubn:formDemoAuthen",
+  "modified": "2017-10-05T04:07:20.818Z",
+  "title": "FormDemoAuthen",
   "display": "form",
-  "created": "2017-09-07T15:26:51.645Z",
+  "name": "formDemoAuthen",
+  "path": "formdemoauthen",
+  "project": "59cc74c033ef1b00088c3f2f",
+  "created": "2017-10-05T04:05:27.813Z",
   "components": [
     {
       "properties": {
@@ -21,7 +21,7 @@ var formdata=
       },
       "tags": [],
       "type": "htmlelement",
-      "content": "Sample Authentication",
+      "content": "Sample Authentication with Form.io",
       "className": "",
       "attrs": [
         {
@@ -36,7 +36,7 @@ var formdata=
     {
       "type": "button",
       "theme": "primary",
-      "disableOnInvalid": true,
+      "disableOnInvalid": false,
       "action": "oauth",
       "block": false,
       "rightIcon": "",
@@ -44,7 +44,7 @@ var formdata=
       "size": "md",
       "key": "submit",
       "tableView": false,
-      "label": "Login",
+      "label": "Submit",
       "input": true,
       "tags": [],
       "conditional": {
@@ -54,25 +54,104 @@ var formdata=
       },
       "properties": {
         "": ""
-      },
-      "lockKey": true
+      }
     }
   ],
-  "owner": null,
+  "owner": "59b100556d85560007c28261",
   "submissionAccess": [
     {
+      "type": "create_all",
+      "roles": []
+    },
+    {
+      "type": "read_all",
+      "roles": []
+    },
+    {
+      "type": "update_all",
+      "roles": []
+    },
+    {
+      "type": "delete_all",
+      "roles": []
+    },
+    {
       "type": "create_own",
-      "roles": [
-        "59b1653a7b152500078711f6"
-      ]
+      "roles": []
+    },
+    {
+      "type": "read_own",
+      "roles": []
+    },
+    {
+      "type": "update_own",
+      "roles": []
+    },
+    {
+      "type": "delete_own",
+      "roles": []
+    },
+    {
+      "type": "team_read",
+      "roles": []
+    },
+    {
+      "type": "team_write",
+      "roles": []
+    },
+    {
+      "type": "team_admin",
+      "roles": []
     }
   ],
   "access": [
     {
+      "type": "create_all",
+      "roles": []
+    },
+    {
       "type": "read_all",
       "roles": [
-        "59b1653a7b152500078711f6"
+        "59cc74c033ef1b00088c3f30",
+        "59cc74c033ef1b00088c3f31",
+        "59cc74c033ef1b00088c3f32"
       ]
+    },
+    {
+      "type": "update_all",
+      "roles": []
+    },
+    {
+      "type": "delete_all",
+      "roles": []
+    },
+    {
+      "type": "create_own",
+      "roles": []
+    },
+    {
+      "type": "read_own",
+      "roles": []
+    },
+    {
+      "type": "update_own",
+      "roles": []
+    },
+    {
+      "type": "delete_own",
+      "roles": []
+    },
+    {
+      "type": "team_read",
+      "roles": []
+    },
+    {
+      "type": "team_write",
+      "roles": []
+    },
+    {
+      "type": "team_admin",
+      "roles": []
     }
   ],
   "tags": [],
